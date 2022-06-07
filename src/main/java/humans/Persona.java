@@ -1,11 +1,10 @@
-package personalInfo;
+package humans;
 
-public class Persona {
-    //TODO макет человека, буем от него наследовать абитуриента и его законных представителей
+public abstract class Persona {
+    //TODO вопрос нужен ли этот абстрактный класс, он родитель всего для 2 классов?
     public String name;
     public String surName;
     public String patronymic;
-
     private String phoneNumber;
 
     public Persona(String name, String surName, String patronymic, String phoneNumber) {
@@ -18,4 +17,14 @@ public class Persona {
     public String getPhoneNumber() {
         return phoneNumber;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s %s %s, Тел.: %s",
+                surName,
+                name,
+                patronymic,
+                phoneNumber);
+    }
 }
+
