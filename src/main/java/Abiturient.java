@@ -9,8 +9,6 @@ import java.time.Period;
 public class Abiturient {
     //TODO написать вменяемый конструктор класса (который можно заполнять по частям) пересмотреть лекцию
 
-    private String login;
-    private String password;
     public Timestamp registrationTime = new Timestamp(System.currentTimeMillis());
     private static int identificationNumber = 0;
 

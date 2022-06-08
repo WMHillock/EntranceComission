@@ -7,6 +7,7 @@ public class Server {
         /*TODO класс сервер, хз есть ли смысл еще и БД городить отдельно можно и в сервере хранить инфу
             у нас все равно более чем 2000 экземпляров Abiturient не будет, с другой стороны, на перспективу ...
             class in work
+                 Вообще в иделае посмотреть про hibernate ...
         */
 
         try (ServerSocket serverSocket = new ServerSocket(8989)) {
